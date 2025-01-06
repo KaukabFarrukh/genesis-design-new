@@ -91,3 +91,30 @@ textarea {
 .submit-button:hover {
     background-color: #3b3fd0;
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .information-container,
+    .contact-wrapper {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .information h3 {
+        font-size: 50px;
+    }
+
+    .input-field,
+    textarea {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
