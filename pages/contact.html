@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Genesis Design</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Contact Us - Genesis Design</title>
 </head>
 
+<body>
 <header>
     <nav>
         <ul class="nav-list">
-            <li class="nav-item logo"> <a href="index.html"><img src="images/Logo.jpg" alt="company logo">
+            <li class="nav-item logo"> <a href="../index.html">
+                <img src="../images/Logo.jpg" alt="company logo">
                  </a></li>
             <li class="nav-item"> <a href="project.html">Project</a></li>
             <li class="nav-item"> <a href="contact.html">Contact</a></li>
@@ -27,14 +28,15 @@
     <div class="main-content">
         <!-- Left: Information section -->
         <div class="information-container">
-            <h3>Full set of great <br> features to make your product fresh.</h3>
-            <p>Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
+            <h3>Full set of great <br> features to make your <br> product fresh.</h3>
+            <br>
+            <p>Our favorite brands are our friends! We help them to <br> achieve their goals, they help us to stay sharp.</p>
         </div>
 
         <!-- Right: Contact form section -->
         <div class="contact-wrapper">
             <div class="details">
-                <form action="">
+                <form action="#" method="post">
                     <div class="form-group">
                         <label for="name" class="label"> Name </label>
                         <input type="text" name="name" id="name" class="input-field" placeholder="Enter full name" required autofocus>
@@ -42,12 +44,12 @@
             
                     <div class="form-group">
                         <label for="email" class="label"> Email </label>
-                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
                     </div>
             
                     <div class="form-group">
                         <label for="input-message" class="label"> Message </label>
-                        <textarea class="input-field" name="input-message" id="input-message" placeholder="Your message"></textarea>
+                        <textarea class="input-field" name="input-message" id="input-message" placeholder="Your message" required></textarea>
                     </div>
             
                     <div class="form-group">
@@ -70,30 +72,37 @@
         </div>
     </div>
 </main>
-   
+
 <footer class="footer-container">
-     
     <ul class="footer-list">
-        <li class="footer-item logo"> <a href="index.html"> <img src="images/Logo.jpg" alt="company logo">
-             </a></li>
-        <li class="footer-item"> <a href="project.html">Project</a></li>
-        <li class="footer-item"> <a href="contact.html">Contact</a></li>
-
-        <li class="footer-item"> <a href="htttp://www.dribbble.com" target="_blank">
-            <img src="images/dribblelogo.jpg" alt="dribbble logo">
-        </a></li>
-
-        <li class="footer-item"> <a href="htttp://www.instagram" target="_blank">
-            <img src="images/instagram.jpeg" alt="instagram logo">
-        </a></li>
-
-        <li class="footer-item"> <a href="htttp://www.twitter.com" target="_blank">
-            <img src="images/twitter.jpg" alt="twitter logo">
-        </a></li>
-
-    </div>
+        <li class="footer-item logo">
+            <a href="../index.html" aria-label="Go to homepage">
+                <img src="../images/Logo.jpg" alt="Company logo">
+            </a>
+        </li>
+        <li class="footer-item">
+            <a href="project.html">Project</a>
+        </li>
+        <li class="footer-item">
+            <a href="contact.html">Contact</a>
+        </li>
+        <li class="footer-item">
+            <a href="http://www.dribbble.com" target="_blank" aria-label="Visit Dribbble">
+                <img src="../images/dribblelogo.jpg" alt="Dribbble logo">
+            </a>
+        </li>
+        <li class="footer-item">
+            <a href="http://www.instagram.com" target="_blank" aria-label="Visit Instagram">
+                <img src="../images/instagram.jpeg" alt="Instagram logo">
+            </a>
+        </li>
+        <li class="footer-item">
+            <a href="http://www.twitter.com" target="_blank" aria-label="Visit Twitter">
+                <img src="../images/twitter.jpg" alt="Twitter logo">
+            </a>
+        </li>
+    </ul>
 </footer>
-
 </body>
 </html>
 

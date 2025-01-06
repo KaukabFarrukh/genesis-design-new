@@ -7,6 +7,9 @@
 body {
     font-family: $main-font;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .main-content {
@@ -16,29 +19,35 @@ body {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    gap: 20px; 
+    gap: 10px;
 }
 
-
 .information-container {
+    flex: 1;
     width: 48%;
     margin-right: 20px; 
 }
 
 .contact-wrapper {
+    flex: 1;
     width: 48%;
     margin-left: 20px;
 }
 
 .information h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    color: #111;
+    font-size: 70px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 55px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 
 .information p {
     font-size: 16px;
     line-height: 1.5;
+    margin: 0;
 }
 
 .details {
@@ -50,22 +59,35 @@ body {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .input-field,
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
 }
 
 .submit-button {
-    padding: 10px;
+    padding: 12px;
     background-color: #4A4FF2;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #3b3fd0;
 }
